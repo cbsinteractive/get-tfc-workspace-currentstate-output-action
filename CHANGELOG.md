@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.0.1...1.0.2) (2021-09-30)
+
+
+### Bug Fixes
+
+* Check correct environment variable ([ecf9562](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/commit/ecf95624373aa3a324e6b9aa4189ae26e6672f56))
+
 ## [1.0.1](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.0.0...1.0.1) (2021-09-30)
 
 
