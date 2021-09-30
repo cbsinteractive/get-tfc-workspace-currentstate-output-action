@@ -12,7 +12,7 @@ def test_default(capsys):
         "INPUT_TFCTOKEN": "some token",
         "INPUT_ORGNAME": "some org",
         "INPUT_WORKSPACENAME": "some-workspace-name",
-        "INPUT_VARIABLE": "some_variable_name",
+        "INPUT_VARIABLENAME": "some_variable_name",
     }
     with patch.dict(os.environ, env, clear=True), patch(
         "entrypoint.subprocess.check_output"
@@ -41,7 +41,7 @@ def test_error_without_workspace():
     env = {
         "INPUT_TFCTOKEN": "some token",
         "INPUT_ORGNAME": "some org",
-        "INPUT_VARIABLE": "some_variable_name",
+        "INPUT_VARIABLENAME": "some_variable_name",
     }
     with patch.dict(os.environ, env, clear=True), pytest.raises(SystemExit):
         # Code under test

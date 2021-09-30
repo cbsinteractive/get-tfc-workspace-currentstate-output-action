@@ -14,7 +14,7 @@ def run():
         token = os.environ["INPUT_TFCTOKEN"]
         org_name = os.environ["INPUT_ORGNAME"]
         workspace_name = os.environ["INPUT_WORKSPACENAME"]
-        output_variable_name = os.environ["INPUT_VARIABLE"]
+        output_variable_name = os.environ["INPUT_VARIABLENAME"]
     except KeyError as e:
         print(f"Environment variable not set: {e}")
         sys.exit(1)
