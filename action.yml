@@ -1,0 +1,29 @@
+name: Get TFC Workspace Current State Output Action
+description: A GitHub Action action used to query the current value of a Terraform Cloud workspace output variable
+inputs:
+  tfcToken:
+    description: A Terraform Cloud API token with access to manage the workspace
+    required: true
+  orgName:
+    description: The name of the Terraform Cloud organization where the workspace resides
+    required: true
+  workspaceName:
+    description: The workspace name
+    required: true
+  variableName:
+    description: The output variable name
+    required: true
+outputs:
+  value:
+    description: The output variable value
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.tfcToken }}
+    - ${{ inputs.orgName }}
+    - ${{ inputs.workspaceName }}
+    - ${{ inputs.variableName }}
+branding:
+  icon: arrow-up-right
+  color: blue

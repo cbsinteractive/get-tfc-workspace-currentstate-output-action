@@ -11,6 +11,8 @@ def _get_cli_path():
 
 def run():
     try:
+        token = os.environ["INPUT_TFCTOKEN"]
+        org_name = os.environ["INPUT_ORGNAME"]
         workspace_name = os.environ["INPUT_WORKSPACENAME"]
         output_variable_name = os.environ["INPUT_VARIABLE"]
     except KeyError as e:
@@ -23,6 +25,10 @@ def run():
                 "stateversions",
                 "current",
                 "getoutput",
+                "-token",
+                token,
+                "-org",
+                org_name,
                 "-workspace",
                 workspace_name,
                 "-name",

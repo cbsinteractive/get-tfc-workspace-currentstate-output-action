@@ -9,6 +9,8 @@ from entrypoint import run
 
 def test_default(capsys):
     env = {
+        "INPUT_TFCTOKEN": "some token",
+        "INPUT_ORGNAME": "some org",
         "INPUT_WORKSPACENAME": "some-workspace-name",
         "INPUT_VARIABLE": "some_variable_name",
     }
@@ -22,6 +24,10 @@ def test_default(capsys):
         "stateversions",
         "current",
         "getoutput",
+        "-token",
+        "some token",
+        "-org",
+        "some org",
         "-workspace",
         "some-workspace-name",
         "-name",
@@ -33,6 +39,8 @@ def test_default(capsys):
 
 def test_error_without_workspace():
     env = {
+        "INPUT_TFCTOKEN": "some token",
+        "INPUT_ORGNAME": "some org",
         "INPUT_VARIABLE": "some_variable_name",
     }
     with patch.dict(os.environ, env, clear=True), pytest.raises(SystemExit):
@@ -42,6 +50,8 @@ def test_error_without_workspace():
 
 def test_error_without_variable_name():
     env = {
+        "INPUT_TFCTOKEN": "some token",
+        "INPUT_ORGNAME": "some org",
         "INPUT_WORKSPACENAME": "some-workspace-name",
     }
     with patch.dict(os.environ, env, clear=True), pytest.raises(SystemExit):
