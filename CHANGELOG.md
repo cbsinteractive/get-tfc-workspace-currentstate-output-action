@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.1.0...1.2.0) (2022-01-27)
+
+
+### Features
+
+* Rename action ([1902de6](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/commit/1902de6a6f9ed27c9b78cd0fc6dcc2d505ef7161))
+
 # [1.1.0](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.0.2...1.1.0) (2022-01-27)
 
 
