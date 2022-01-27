@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.0.2...1.1.0) (2022-01-27)
+
+
+### Features
+
+* Rename action ([7809069](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/commit/78090696e34aa7cd5dcfaa7c9a4276a30f6ab946))
+* Use tfc-cli v1.0.0 ([ad10e50](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/commit/ad10e50d57dd3178c8bb14a880a7f0905b83e3cf))
+
 ## [1.0.2](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.0.1...1.0.2) (2021-09-30)
 
 
