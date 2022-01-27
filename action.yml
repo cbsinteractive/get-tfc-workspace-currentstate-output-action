@@ -1,4 +1,4 @@
-name: Get Terraform Cloud Workspace Current State Output
+name: Get TFC Workspace Current State Output
 description: A GitHub Action action used to query the current value of a Terraform Cloud workspace output variable
 inputs:
   tfcToken:
