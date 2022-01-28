@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.3.0...1.4.0) (2022-01-28)
+
+
+### Features
+
+* use python 3.9.9 ([e4893a3](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/commit/e4893a363234bff622a220076d01c6c80e4b7387))
+
 # [1.3.0](https://github.com/cbsinteractive/get-tfc-workspace-currentstate-output-action/compare/1.2.0...1.3.0) (2022-01-27)
 
 
